@@ -1,9 +1,9 @@
 import CodeBlock from "@/app/components/CodeBlock";
-import { Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 
 const page = () => {
-  const text = 
-  `https://www.ovh.com/manager
+	const text =
+		`https://www.ovh.com/manager
 
 En bas de cette page, click on Serveurs privés virtuels 1 vps******.ovh.net
 Then click  reinstall my VPS --> Debian 11
@@ -31,15 +31,21 @@ Configure the nginx and srv_dev files, based on backup H:/DEV/srv_dev :
 /etc/php
 /var/www/srv_dev
 `;
-  return (    
-      <div className='overflow-x-auto text-sm'>
-				<Typography variant='body1' component="div" sx={{marginTop:4, marginBottom:2}}>
+	return (
+		<div className='overflow-x-auto text-sm'>
+			<Typography variant='body1' component="div" sx={{ marginTop: 4, marginBottom: 2 }}>
 				Reinstall VPS from scratch on Debian 11
-      </Typography>
-				<CodeBlock text={text} />
-      </div>
-   
-  )
+			</Typography>
+			<Link href="https://help.ovhcloud.com/csm/en-dedicated-servers-root-password?id=kb_article_view&sysparm_article=KB0043633">
+			https://help.ovhcloud.com/csm/en-dedicated-servers-root-password?id=kb_article_view&sysparm_article=KB0043633
+			</Link>
+			<Typography variant='body1' component="div" sx={{ marginTop: 4, marginBottom: 2 }}>
+				Do not enable root ssh login ! put your user in the sudoers group and use the sudo command.
+			</Typography>
+			<CodeBlock text={text} />
+		</div>
+
+	)
 }
 
 export default page

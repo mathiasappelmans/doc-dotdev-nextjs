@@ -99,6 +99,7 @@ snap install hello-world
 hello-world
 snap install --classic certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
+// stop nginx service
 certbot --nginx
 `;
 

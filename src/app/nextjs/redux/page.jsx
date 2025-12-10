@@ -8,21 +8,21 @@ const page = () => {
 			<div className="flex items-center mt-5">
 				<Image src="/react.svg" width={40} height={0} className="-mt-8 mr-3" alt="React logo" />
 				<Typography variant="h5" sx={{ fontWeight: '600' }} mb={4}>
-					UseReducer
+					Redux
 				</Typography>
 			</div>
 				<Typography variant="h5" sx={{ fontWeight: '600' }} mb={4}>
-					The useState Hell !
+					The global state manager
 				</Typography>
 			
 			<Typography sx={{ mb: 4 }}>
-				<Link href="https://www.w3schools.com/react/react_usereducer.asp" target="_blank">
-					https://www.w3schools.com/react/react_usereducer.asp
+				<Link href="https://github.com/tomatoweb/redux-app" target="_blank">
+					https://github.com/tomatoweb/redux-app
 				</Link>
 			</Typography>
 			<Typography sx={{ mb: 4 }}>
-				<Link href="https://www.youtube.com/watch?v=SzcPyC5Nzdo" target="_blank">
-					https://www.youtube.com/watch?v=SzcPyC5Nzdo
+				<Link href="https://www.youtube.com/watch?v=hWLFTtcnEOs" target="_blank">
+					https://www.youtube.com/watch?v=hWLFTtcnEOs
 				</Link>
 			</Typography>
 		</div>

@@ -13,6 +13,10 @@ import useSidebar from '@/app/hooks/useSidebar'
 const nextjsListTitle = { text: "React Next.js", route: '/nextjs' };
 const nextjsList = [
 	{
+		text: 'React router and navigation',
+		route: '/nextjs/reactrouter'
+	},
+	{
 		text: 'SSR',
 		route: '/nextjs/server-side'
 	},
@@ -41,6 +45,10 @@ const nextjsList = [
 		route: '/nextjs/usereducer'
 	},
 	{
+		text: 'Redux',
+		route: '/nextjs/redux'
+	},
+	{
 		text: 'Headers - Cookies',
 		route: '/nextjs/headers'
 	},
@@ -67,6 +75,10 @@ const nextjsList = [
   {
 		text: 'API',
     route: '/nextjs/getbyapi'
+  },
+  {
+		text: 'json-server',
+    route: '/nextjs/json-server'
   },
 	{
 		text: 'Server Actions',
@@ -175,7 +187,7 @@ const laravelList = [
 const symfonyListTitle = { text: "Symfony", route: '/symfony' };
 const symfonyList = [
 	{
-		text: '.env order',
+		text: '.env',
     route: '/symfony/env'
   },
 	{
@@ -289,8 +301,16 @@ const muiList = [
     route: '/mui/theme'
   },
 ];
-const tailwindListTitle = { text: "Tailwind css", route: '/tailwind' };
+const tailwindListTitle = { text: "Tailwind", route: '/tailwind' };
 const tailwindList = [
+  {
+    text: 'Conditional className',
+    route: '/tailwind/conditional'
+  },
+  {
+    text: 'Components',
+    route: '/tailwind/components'
+  },
   {
     text: 'Custom colors',
     route: '/tailwind/color'
@@ -300,7 +320,7 @@ const tailwindList = [
     route: '/tailwind/fonts'
   },
 ];
-const debianListTitle = { text: "Debian", route: '/debian' };
+const debianListTitle = { text: "Debian-Ubuntu", route: '/debian' };
 const debianList = [
   {
     text: 'Reinstall from scratch',
