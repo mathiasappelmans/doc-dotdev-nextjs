@@ -320,7 +320,7 @@ const tailwindList = [
     route: '/tailwind/fonts'
   },
 ];
-const debianListTitle = { text: "Debian", route: '/debian' };
+const debianListTitle = { text: "Debian-Ubuntu", route: '/debian' };
 const debianList = [
   {
     text: 'Reinstall from scratch',

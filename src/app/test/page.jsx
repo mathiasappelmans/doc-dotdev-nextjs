@@ -2,6 +2,11 @@
 
 import { useState } from "react"
 
+/**
+ * 
+ * @returns 
+ * @param {}
+ */
 const Test = () => {
 
 		const [checked, setChecked] = useState(false)
@@ -30,6 +35,10 @@ const Test = () => {
     )
 }
 
+/**
+ * 
+ * @param {boolean} checked 
+ */
 const GUICheckbox = ({checked, onCheck}) => {
 	return (
 	<label>
