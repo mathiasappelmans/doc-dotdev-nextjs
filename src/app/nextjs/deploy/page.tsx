@@ -46,6 +46,13 @@ location / {
 				(rien d'autres ici !)
 }
 
+Note: check used ports:
+sudo netstat -tnlp
+-t for TCP only
+-l for Listening ports
+-n for Don't look up service & names, just display numbers
+-p for show processor information
+
 
 chown -R www-data:www-data /var/www/srv_dev (pour le domaine)
 chown -R www-data:www-data *

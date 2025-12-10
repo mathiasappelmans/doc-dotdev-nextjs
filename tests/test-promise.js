@@ -1,8 +1,8 @@
 // This file is for Node tests on server side
 // type 'node tests/test-promise.js' in CLI at root of this project
 
-console.log(obj?.prop)
-
+console.log(obj.prop)
+var obj
 return // die
 
 const axiosRequest = require('axios')
