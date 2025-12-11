@@ -3,7 +3,10 @@ import { Typography, Link } from "@mui/material";
 
 const page = () => {
   const text = 
-  `Create a repo on Github
+  `
+  Pour une reinstall linux depuis le début voir dans /debian/reinstall
+  
+  Create a repo on Github
 
 Dans le projet nextjs local
 	changer l'origin si on a déjà un .git
