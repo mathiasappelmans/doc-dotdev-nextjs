@@ -3,7 +3,10 @@ import { Typography, Link } from "@mui/material";
 
 const page = () => {
   const text = 
-  `Create a repo on Github
+  `
+  Pour une reinstall linux depuis le début voir dans /debian/reinstall
+  
+  Create a repo on Github
 
 Dans le projet nextjs local
 	changer l'origin si on a déjà un .git
@@ -45,6 +48,13 @@ location / {
 	proxy_pass http://localhost:3000;   (adapter le port !!)
 				(rien d'autres ici !)
 }
+
+Note: check used ports:
+sudo netstat -tnlp
+-t for TCP only
+-l for Listening ports
+-n for Don't look up service & names, just display numbers
+-p for show processor information
 
 
 chown -R www-data:www-data /var/www/srv_dev (pour le domaine)
