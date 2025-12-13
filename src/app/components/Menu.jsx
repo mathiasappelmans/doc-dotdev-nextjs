@@ -13,6 +13,10 @@ import useSidebar from '@/app/hooks/useSidebar'
 const nextjsListTitle = { text: "React Next.js", route: '/nextjs' };
 const nextjsList = [
 	{
+		text: 'React + Tailwind 4 install from scratch',
+		route: '/nextjs/scratchreact'
+	},
+	{
 		text: 'React router and navigation',
 		route: '/nextjs/reactrouter'
 	},
