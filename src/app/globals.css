@@ -36,6 +36,10 @@ button[aria-label="Copy Code"]{
   text-decoration: none !important;
 }
 
+/* remove underline from MUI Link */
+* {
+	text-decoration: none !important;
+}
 
 /* Enable scroll on position:fixed element */
 @layer utilities {

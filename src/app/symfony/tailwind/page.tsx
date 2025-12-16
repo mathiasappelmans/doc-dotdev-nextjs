@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import CodeBlock from "@/app/components/CodeBlock";
 import Image from "next/image";
 
@@ -79,11 +79,21 @@ const page = () => {
   return (
     <div>
       <Typography variant="h5" sx={{fontWeight: 600, marginBottom:4}}>Install Tailwind</Typography>
-      <CodeBlock text={`// https://github.com/symfony-cli/symfony-cli
-symfony new my-tailwind-app --webapp\ncd my-tailwind-app`} />
-      Alternativ Composer
+      <Typography sx={{fontWeight: 600}}>
+				Install Symfony CLI binary
+			</Typography>
+			<Link href="https://github.com/symfony-cli/symfony-cli" target="_blank">
+					https://github.com/symfony-cli/symfony-cli
+				</Link>
+				<Typography sx={{fontWeight: 600, marginTop: 4}}>
+				Install Symfony with CLI binary
+			</Typography>
+      <CodeBlock text={`symfony new my-tailwind-app --webapp\ncd my-tailwind-app`} 
+			/>
+      Or with Composer
       <CodeBlock text={`
-composer create-project symfony/skeleton:\"7.3.*\" my-tailwind-app\ncd my-tailwind-app\ncomposer require webapp`} />     
+composer create-project symfony/skeleton:\"7.3.*\" my-tailwind-app\ncd my-tailwind-app\ncomposer require webapp`} 
+			/>     
       Add the viewport meta tag in base.html.twig to enable mobile responsivity
       <CodeBlock text={'<meta name="viewport" content="width=device-width, initial-scale=1.0">'} />     
       Install the Bundler Webpack-Encore
