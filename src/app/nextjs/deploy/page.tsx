@@ -84,6 +84,10 @@ pm2 save
 
 pm2 list     (pour checker)
 
+check for pm2 errors:
+--------------------
+pm2 log
+
 
 Après un update du code local, commiter et pusher, faire un pull sur le serveur, puis un build, et enfin : 
 pm2 list  (voir la liste des process)
@@ -104,6 +108,16 @@ snap install --classic certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
 // stop nginx service
 certbot --nginx
+
+
+
+if this error occur: "port 80 or 443 allready in use" :
+- pkill -f nginx & wait $!
+- systemctl start nginx 
+
+relaunch pm2:
+------------
+pm2 start npm --name "mathiasappelmans.be" -- start -- --port=3000
 `;
 
 const text4 = `root@vps683375:/var/www/srv_dev/app/social# certbot certificates
