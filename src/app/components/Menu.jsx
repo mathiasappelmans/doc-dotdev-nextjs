@@ -235,7 +235,7 @@ const symfonyList = [
     route: '/symfony/twig'
   },
 	{
-		text: 'Tailwind',
+		text: 'Tailwind Install',
 		route: '/symfony/tailwind'
 	},
   {

@@ -91,8 +91,7 @@ const page = () => {
       <CodeBlock text={`symfony new my-tailwind-app --webapp\ncd my-tailwind-app`} 
 			/>
       Or with Composer
-      <CodeBlock text={`
-composer create-project symfony/skeleton:\"7.3.*\" my-tailwind-app\ncd my-tailwind-app\ncomposer require webapp`} 
+      <CodeBlock text={`composer create-project symfony/skeleton:\"7.3.*\" my-tailwind-app\ncd my-tailwind-app\ncomposer require webapp`} 
 			/>     
       Add the viewport meta tag in base.html.twig to enable mobile responsivity
       <CodeBlock text={'<meta name="viewport" content="width=device-width, initial-scale=1.0">'} />     
