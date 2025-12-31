@@ -10,6 +10,11 @@ import { useRouter } from 'next/navigation';
 import { ChevronDown, ChevronRight } from '@geist-ui/icons';
 import useSidebar from '@/app/hooks/useSidebar'
 
+/* Things that are constant and not depending on state or props 
+generally should be defined outside the component. 
+Otherwise they will be constantly redefined 
+and could also potentially cause issues with unstable references, 
+dependency arrays, etc. */
 const nextjsListTitle = { text: "React Next.js", route: '/nextjs' };
 const nextjsList = [
 	{
@@ -368,6 +373,8 @@ const mainList = [
     route: '/template'
   },
 ];
+
+// style
 const ListButton = styled(ListItemButton)(({ theme }) => ({
   color: theme.palette.text.secondary,
   backgroundColor: 'transparent',
@@ -377,7 +384,6 @@ const ListButton = styled(ListItemButton)(({ theme }) => ({
     "&:hover": { backgroundColor: 'transparent' },
   }
 }));
-
 const StyledList = styled(List)({
   "&.MuiList-root": { maxWidth: '100%' }
 })
