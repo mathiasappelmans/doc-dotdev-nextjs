@@ -15,364 +15,391 @@ generally should be defined outside the component.
 Otherwise they will be constantly redefined 
 and could also potentially cause issues with unstable references, 
 dependency arrays, etc. */
-const nextjsListTitle = { text: "React Next.js", route: '/nextjs' };
-const nextjsList = [
-	{
-		text: 'React + Tailwind 4 install from scratch',
-		route: '/nextjs/scratchreact'
-	},
-	{
-		text: 'React router and navigation',
-		route: '/nextjs/reactrouter'
-	},
-	{
-		text: 'SSR',
-		route: '/nextjs/server-side'
-	},
-	{
-		text: 'typeof window',
-		route: '/nextjs/typeof'
-	},
-	{
-		text: 'Promise',
-    route: '/nextjs/promise'
-  },
-	{
-		text: 'useState',
-		route: '/nextjs/usestate'
-	},
-	{
-		text: 'useEffect',
-		route: '/nextjs/useeffect'
-	},
-	{
-		text: 'useContext',
-		route: '/nextjs/usecontext'
-	},
-	{
-		text: 'useReducer',
-		route: '/nextjs/usereducer'
-	},
-	{
-		text: 'Redux',
-		route: '/nextjs/redux'
-	},
-	{
-		text: 'Headers - Cookies',
-		route: '/nextjs/headers'
-	},
-	{
-		text: 'DOM vs HTML',
-		route: '/nextjs/dom'
-	},
-	{
-		text: 'Children Pattern',
-		route: '/nextjs/children-pattern'
-	},
+export const _data = [
   {
-    text: 'Named | Default ex-import',
-    route: '/nextjs/export-default-vs-named'
-  },
-	{
-		text: 'Prisma',
-		route: '/nextjs/prisma'
-	},
-  {
-		text: 'ORM',
-    route: '/nextjs/getbyorm'
+    id: '1',
+    name: 'React Next.js',
+    url: '/nextjs/scratchreact',
+    icon: 'tabler-chart-pie-2',
+    section: 'Dashboards'
   },
   {
-		text: 'API',
-    route: '/nextjs/getbyapi'
+    id: '2',
+    name: 'Laravel',
+    url: '/laravel/eager-loading',
+    icon: 'tabler-chart-pie-2',
+    section: 'Laravel'
   },
   {
-		text: 'json-server',
-    route: '/nextjs/json-server'
+    id: '3',
+    name: 'Eager Loading',
+    url: '/laravel/components',
+    icon: 'tabler-chart-pie-2',
+    section: 'Laravel'
   },
-	{
-		text: 'Server Actions',
-		route: '/nextjs/action'
-	},
-	{
-		text: 'Suspense',
-		route: '/nextjs/suspence'
-	},
-  {
-		text: 'dynamic import',
-    route: '/nextjs/dynamic'
-  },
-  {
-    text: 'Image',
-    route: '/nextjs/next-image'
-  },
-  {
-    text: 'Code Block',
-    route: '/nextjs/codeblock'
-  },
-  {
-    text: 'Icons',
-    route: '/nextjs/icons'
-  },
-  {
-    text: 'Iconify',
-    route: '/nextjs/iconify'
-  },
-  {
-    text: 'Form',
-    route: '/nextjs/form-old-way'
-  },
-  {
-    text: 'setInterval',
-    route: '/nextjs/setinterval'
-  },
-  {
-    text: 'setTimeout',
-    route: '/nextjs/settimeout'
-  },
-  {
-    text: 'Tailwind+MUI from scratch',
-    route: '/nextjs/scratch'
-  },
-  {
-    text: 'Webpack, SWC, Babel : transpile and bundle',
-    route: '/nextjs/swc'
-  },
-  {
-    text: 'Deploy Next on Linux',
-    route: '/nextjs/deploy'
-  },
-  {
-    text: 'Deploy React on Linux',
-    route: '/nextjs/deploy-react'
-  },
-  {
-    text: 'SyntaxHighlighter CodeBlock',
-    route: '/nextjs/syntax'
-  },
-  {
-    text: 'Thiny Scrollbar',
-    route: '/nextjs/scrollbar'
-  },
-  {
-    text: 'SVG config',
-    route: '/nextjs/svgcolor'
-  },
-  {
-    text: 'TSX props typing',
-    route: '/nextjs/optionaltsx'
-  },
-  {
-    text: 'JWT',
-    route: '/nextjs/jwt'
-  },
-  {
-    text: 'map - find',
-    route: '/nextjs/map-find'
-  },
-  {
-    text: 'Optional chaining ?.',
-    route: '/nextjs/optional-chaining'
-  },
-  {
-    text: 'Metadata api',
-    route: '/nextjs/metadata'
-  },
-];
-const laravelListTitle = { text: "Laravel", route: '/laravel' };
-const laravelList = [
-  {
-    text: 'Eager Loading',
-    route: '/laravel/eager-loading'
-  },
-  {
-    text: 'Components',
-    route: '/laravel/components'
-  },
-  {
-    text: 'Custom Global Function',
-    route: '/laravel/custom-global-function'
-  },
-];
-const symfonyListTitle = { text: "Symfony", route: '/symfony' };
-const symfonyList = [
-	{
-		text: '.env',
-    route: '/symfony/env'
-  },
-	{
-		text: 'Service API',
-    route: '/symfony/api'
-  },
-  {
-		text: 'Doctrine',
-    route: '/symfony/doctrine'
-  },
-  {
-		text: 'Doctrine n+1 fix',
-    route: '/symfony/doctrinefix'
-  },
-  {
-		text: 'DTO',
-    route: '/symfony/dto'
-  },
-  {
-		text: 'Services',
-    route: '/symfony/services'
-  },
-  {
-		text: 'Mercure Push Hub',
-    route: '/symfony/mercure'
-  },
-  {
-    text: 'Messenger',
-    route: '/symfony/messenger'
-  },
-	{
-		text: 'Asset Mapper',
-		route: '/symfony/asset-mapper'
-	},
-  {
-		text: 'Webpack Encore',
-    route: '/symfony/encore'
-  },
-  {
-		text: 'Twig',
-    route: '/symfony/twig'
-  },
-	{
-		text: 'Tailwind Install',
-		route: '/symfony/tailwind'
-	},
-  {
-    text: 'Bootstrap css',
-    route: '/symfony/bootstrap'
-  },
-  {
-    text: 'KNP Paginator',
-    route: '/symfony/kpnpaginator'
-  },
-];
-const phpListTitle = { text: "PHP", route: '/php' };
-const phpList = [
-  {
-    text: 'Constructor Promotion',
-    route: '/symfony/promotion'
-  },
-  {
-    text: 'OpenAPI - Swagger',
-    route: '/symfony/openapi'
-  },
-  {
-    text: '__DIR__',
-    route: '/symfony/dir'
-  },
-  {
-    text: 'Composer',
-    route: '/symfony/composer'
-  },
-  {
-    text: 'Bootstrap template',
-    route: '/symfony/html'
-  },
-  {
-    text: 'Curl API Merge arrays',
-    route: '/symfony/merge'
-  }
-];
-const muiListTitle = { text: "MUI", route: '/mui' };
-const muiList = [
-  {
-    text: 'Demo',
-    route: '/mui/demo'
-  },
-  {
-    text: 'sx versus styled',
-    route: '/mui/versus'
-  },
-  {
-    text: 'Custom colors',
-    route: '/mui/color'
-  },
-  {
-    text: 'Custom fonts',
-    route: '/mui/fonts'
-  },
-  {
-    text: 'Draggable Scroll',
-    route: '/mui/draggable'
-  },
-  {
-    text: 'MUI X Tree View',
-    route: '/mui/xtreeview'
-  },
-  {
-    text: 'Theme',
-    route: '/mui/theme'
-  },
-];
-const tailwindListTitle = { text: "Tailwind", route: '/tailwind' };
-const tailwindList = [
-  {
-    text: 'Conditional className',
-    route: '/tailwind/conditional'
-  },
-  {
-    text: 'Components',
-    route: '/tailwind/components'
-  },
-  {
-    text: 'Custom colors',
-    route: '/tailwind/color'
-  },
-  {
-    text: 'Custom fonts',
-    route: '/tailwind/fonts'
-  },
-];
-const debianListTitle = { text: "Debian-Ubuntu", route: '/debian' };
-const debianList = [
-  {
-    text: 'Reinstall from scratch',
-    route: '/debian/reinstall'
-  },
-  {
-    text: 'Subdomain',
-    route: '/debian/subdomain'
-  },
-];
-const sqlListTitle = { text: "SQL", route: '/sql' };
-const sqlList = [
-  {
-    text: 'SQLite',
-    route: '/sql/sqlite'
-  },
-  {
-    text: 'MySQL',
-    route: '/sql/mysql'
-  },
-];
-const mainList = [
-  {
-    text: 'GitLab CI/CD',
-    route: '/gitlab'
-  },
-  {
-    text: 'Versioning',
-    route: '/versioning'
-  },
-  {
-    text: 'Emoji',
-    route: '/emoji'
-  },
-  {
-    text: 'Scss - Sass',
-    route: '/sass'
-  },
-  {
-    text: 'Page Template',
-    route: '/template'
-  },
-];
+]
+
+
+export const data = {
+  nextjsListTitle : { text: "React Next.js", route: '/nextjs' },
+  nextjsList : [
+    {
+      text: 'React + Tailwind 4 install from scratch',
+      route: '/nextjs/scratchreact'
+    },
+    {
+      text: 'React router and navigation',
+      route: '/nextjs/reactrouter'
+    },
+    {
+      text: 'SSR',
+      route: '/nextjs/server-side'
+    },
+    {
+      text: 'typeof window',
+      route: '/nextjs/typeof'
+    },
+    {
+      text: 'Promise',
+      route: '/nextjs/promise'
+    },
+    {
+      text: 'useState',
+      route: '/nextjs/usestate'
+    },
+    {
+      text: 'useEffect',
+      route: '/nextjs/useeffect'
+    },
+    {
+      text: 'useContext',
+      route: '/nextjs/usecontext'
+    },
+    {
+      text: 'useReducer',
+      route: '/nextjs/usereducer'
+    },
+    {
+      text: 'Redux',
+      route: '/nextjs/redux'
+    },
+    {
+      text: 'Headers - Cookies',
+      route: '/nextjs/headers'
+    },
+    {
+      text: 'DOM vs HTML',
+      route: '/nextjs/dom'
+    },
+    {
+      text: 'Children Pattern',
+      route: '/nextjs/children-pattern'
+    },
+    {
+      text: 'Named | Default ex-import',
+      route: '/nextjs/export-default-vs-named'
+    },
+    {
+      text: 'Prisma',
+      route: '/nextjs/prisma'
+    },
+    {
+      text: 'ORM',
+      route: '/nextjs/getbyorm'
+    },
+    {
+      text: 'API',
+      route: '/nextjs/getbyapi'
+    },
+    {
+      text: 'json-server',
+      route: '/nextjs/json-server'
+    },
+    {
+      text: 'Server Actions',
+      route: '/nextjs/action'
+    },
+    {
+      text: 'Suspense',
+      route: '/nextjs/suspence'
+    },
+    {
+      text: 'dynamic import',
+      route: '/nextjs/dynamic'
+    },
+    {
+      text: 'Image',
+      route: '/nextjs/next-image'
+    },
+    {
+      text: 'Code Block',
+      route: '/nextjs/codeblock'
+    },
+    {
+      text: 'Icons',
+      route: '/nextjs/icons'
+    },
+    {
+      text: 'Iconify',
+      route: '/nextjs/iconify'
+    },
+    {
+      text: 'Form',
+      route: '/nextjs/form-old-way'
+    },
+    {
+      text: 'setInterval',
+      route: '/nextjs/setinterval'
+    },
+    {
+      text: 'setTimeout',
+      route: '/nextjs/settimeout'
+    },
+    {
+      text: 'Tailwind+MUI from scratch',
+      route: '/nextjs/scratch'
+    },
+    {
+      text: 'Webpack, SWC, Babel : transpile and bundle',
+      route: '/nextjs/swc'
+    },
+    {
+      text: 'Deploy Next on Linux',
+      route: '/nextjs/deploy'
+    },
+    {
+      text: 'Deploy React on Linux',
+      route: '/nextjs/deploy-react'
+    },
+    {
+      text: 'SyntaxHighlighter CodeBlock',
+      route: '/nextjs/syntax'
+    },
+    {
+      text: 'Thiny Scrollbar',
+      route: '/nextjs/scrollbar'
+    },
+    {
+      text: 'SVG config',
+      route: '/nextjs/svgcolor'
+    },
+    {
+      text: 'TSX props typing',
+      route: '/nextjs/optionaltsx'
+    },
+    {
+      text: 'JWT',
+      route: '/nextjs/jwt'
+    },
+    {
+      text: 'map - find',
+      route: '/nextjs/map-find'
+    },
+    {
+      text: 'Optional chaining ?.',
+      route: '/nextjs/optional-chaining'
+    },
+    {
+      text: 'Metadata api',
+      route: '/nextjs/metadata'
+    },
+  ],
+  laravelListTitle : { text: "Laravel", route: '/laravel' },
+  laravelList : [
+    {
+      text: 'Eager Loading',
+      route: '/laravel/eager-loading'
+    },
+    {
+      text: 'Components',
+      route: '/laravel/components'
+    },
+    {
+      text: 'Custom Global Function',
+      route: '/laravel/custom-global-function'
+    },
+  ],
+  symfonyListTitle : { text: "Symfony", route: '/symfony' },
+  symfonyList : [
+    {
+      text: '.env',
+      route: '/symfony/env'
+    },
+    {
+      text: 'Service API',
+      route: '/symfony/api'
+    },
+    {
+      text: 'Doctrine',
+      route: '/symfony/doctrine'
+    },
+    {
+      text: 'Doctrine n+1 fix',
+      route: '/symfony/doctrinefix'
+    },
+    {
+      text: 'DTO',
+      route: '/symfony/dto'
+    },
+    {
+      text: 'Services',
+      route: '/symfony/services'
+    },
+    {
+      text: 'Mercure Push Hub',
+      route: '/symfony/mercure'
+    },
+    {
+      text: 'Messenger',
+      route: '/symfony/messenger'
+    },
+    {
+      text: 'Asset Mapper',
+      route: '/symfony/asset-mapper'
+    },
+    {
+      text: 'Webpack Encore',
+      route: '/symfony/encore'
+    },
+    {
+      text: 'Twig',
+      route: '/symfony/twig'
+    },
+    {
+      text: 'Tailwind Install',
+      route: '/symfony/tailwind'
+    },
+    {
+      text: 'Bootstrap css',
+      route: '/symfony/bootstrap'
+    },
+    {
+      text: 'KNP Paginator',
+      route: '/symfony/kpnpaginator'
+    },
+  ],
+  phpListTitle : { text: "PHP", route: '/php' },
+  phpList : [
+    {
+      text: 'Constructor Promotion',
+      route: '/symfony/promotion'
+    },
+    {
+      text: 'OpenAPI - Swagger',
+      route: '/symfony/openapi'
+    },
+    {
+      text: '__DIR__',
+      route: '/symfony/dir'
+    },
+    {
+      text: 'Composer',
+      route: '/symfony/composer'
+    },
+    {
+      text: 'Bootstrap template',
+      route: '/symfony/html'
+    },
+    {
+      text: 'Curl API Merge arrays',
+      route: '/symfony/merge'
+    }
+  ],
+  muiListTitle : { text: "MUI", route: '/mui' },
+  muiList : [
+    {
+      text: 'Demo',
+      route: '/mui/demo'
+    },
+    {
+      text: 'sx versus styled',
+      route: '/mui/versus'
+    },
+    {
+      text: 'Custom colors',
+      route: '/mui/color'
+    },
+    {
+      text: 'Custom fonts',
+      route: '/mui/fonts'
+    },
+    {
+      text: 'Draggable Scroll',
+      route: '/mui/draggable'
+    },
+    {
+      text: 'MUI X Tree View',
+      route: '/mui/xtreeview'
+    },
+    {
+      text: 'Theme',
+      route: '/mui/theme'
+    },
+  ],
+  tailwindListTitle : { text: "Tailwind", route: '/tailwind' },
+  tailwindList : [
+    {
+      text: 'Conditional className',
+      route: '/tailwind/conditional'
+    },
+    {
+      text: 'Components',
+      route: '/tailwind/components'
+    },
+    {
+      text: 'Custom colors',
+      route: '/tailwind/color'
+    },
+    {
+      text: 'Custom fonts',
+      route: '/tailwind/fonts'
+    },
+  ],
+  debianListTitle : { text: "Debian-Ubuntu", route: '/debian' },
+  debianList : [
+    {
+      text: 'Reinstall from scratch',
+      route: '/debian/reinstall'
+    },
+    {
+      text: 'Subdomain',
+      route: '/debian/subdomain'
+    },
+  ],
+  sqlListTitle : { text: "SQL", route: '/sql' },
+  sqlList : [
+    {
+      text: 'SQLite',
+      route: '/sql/sqlite'
+    },
+    {
+      text: 'MySQL',
+      route: '/sql/mysql'
+    },
+  ],
+  mainList : [
+    {
+      text: 'GitLab CI/CD',
+      route: '/gitlab'
+    },
+    {
+      text: 'Versioning',
+      route: '/versioning'
+    },
+    {
+      text: 'Emoji',
+      route: '/emoji'
+    },
+    {
+      text: 'Scss - Sass',
+      route: '/sass'
+    },
+    {
+      text: 'Page Template',
+      route: '/template'
+    },
+  ],
+}
 
 // style
 const ListButton = styled(ListItemButton)(({ theme }) => ({
@@ -427,11 +454,11 @@ export default function Menu() {
         <StyledList sx={{ width: 310, paddingLeft: 5 }}>
 
           <ListItemButton onClick={() => { setNextjsListOpen(!nextjsListOpen) }} disableRipple dense>
-            <ListItemText primary={`${nextjsListTitle.text}`} /> {nextjsListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.nextjsListTitle.text}`} /> {nextjsListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={nextjsListOpen} timeout="auto" unmountOnExit>
             <List component="div" className='max-w-full'>
-              {nextjsList.map((item) => (
+              {data.nextjsList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -452,11 +479,11 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton onClick={() => { setMuiListOpen(!muiListOpen) }} disableRipple dense>
-            <ListItemText primary={`${muiListTitle.text}`} /> {muiListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.muiListTitle.text}`} /> {muiListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={muiListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {muiList.map((item) => (
+              {data.muiList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -477,11 +504,11 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton onClick={() => { setTailwindListOpen(!tailwindListOpen) }} disableRipple dense>
-            <ListItemText primary={`${tailwindListTitle.text}`} /> {tailwindListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.tailwindListTitle.text}`} /> {tailwindListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={tailwindListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {tailwindList.map((item) => (
+              {data.tailwindList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -502,12 +529,12 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton component="a" onClick={() => { setLaravelListOpen(!laravelListOpen) }} disableRipple dense>
-            <ListItemText primary={`${laravelListTitle.text}`} /> 
+            <ListItemText primary={`${data.laravelListTitle.text}`} /> 
 						{laravelListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={laravelListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {laravelList.map((item) => (
+              {data.laravelList.map((item) => (
                 <ListButton
                   disableRipple
                   component="div"
@@ -528,11 +555,11 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton component="a" onClick={() => { setSymfonyListOpen(!symfonyListOpen) }} disableRipple dense>
-            <ListItemText primary={`${symfonyListTitle.text}`} /> {symfonyListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.symfonyListTitle.text}`} /> {symfonyListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={symfonyListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {symfonyList.map((item) => (
+              {data.symfonyList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -553,11 +580,11 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton component="a" onClick={() => { setPhpListOpen(!phpListOpen) }} disableRipple dense>
-            <ListItemText primary={`${phpListTitle.text}`} /> {phpListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.phpListTitle.text}`} /> {phpListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={phpListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {phpList.map((item) => (
+              {data.phpList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -578,11 +605,11 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton onClick={() => { setDebianListOpen(!debianListOpen) }} disableRipple dense>
-            <ListItemText primary={`${debianListTitle.text}`} /> {debianListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.debianListTitle.text}`} /> {debianListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={debianListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {debianList.map((item) => (
+              {data.debianList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -603,11 +630,11 @@ export default function Menu() {
           </Collapse>
 
           <ListItemButton onClick={() => { setSqlListOpen(!sqlListOpen) }} disableRipple dense>
-            <ListItemText primary={`${sqlListTitle.text}`} /> {sqlListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+            <ListItemText primary={`${data.sqlListTitle.text}`} /> {sqlListOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           </ListItemButton>
           <Collapse in={sqlListOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {sqlList.map((item) => (
+              {data.sqlList.map((item) => (
                 <ListButton
                   disableRipple
                   component="a"
@@ -627,7 +654,7 @@ export default function Menu() {
             </List>
           </Collapse>
 
-          {mainList.map((item, index) => (
+          {data.mainList.map((item, index) => (
             <ListItem key={item.text + index} disablePadding sx={{ display: 'block' }}>
               <ListButton
                 disableRipple

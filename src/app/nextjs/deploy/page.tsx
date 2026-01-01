@@ -71,16 +71,18 @@ cd /var/www/srv_dev/app/myapp
 pm2 start npm --name "nextjs-dotdev" -- start -- --port=3000   (adapter le port !!)
 
 // en cas de reboot du VPS, pour relancer les apps dans pm2 (il faudra aussi stop apache2 at start nginx)
-cd /var/www/srv_dev/app/doc
-pm2 start npm --name "doc.dotdev.be" -- start -- --port=3004
-cd ../app
-pm2 start npm --name "app.dotdev.be" -- start -- --port=3005
-cd ../dashboard/
+
+// as root
+pm2 start npm --name "mathiasappelmans.be" -- start -- --port=3000
+pm2 start npm --name "doc.dotdev.be" -- start -- --port=3010
 pm2 start npm --name "dashboard.dotdev.be" -- start -- --port=3003
-cd ../eshop/
+pm2 start npm --name "e-shop.dotdev.be" -- start -- --port=3004
+
+cd ../eshop
 pm2 start npm --name "e-shop.dotdev.be" -- start -- --port=3001
 
-pm2 save
+pm2 save // as root, saved in /root/.pm2/dump.pm2, because pm2 start (with root user) as service when system reboot
+
 
 pm2 list     (pour checker)
 
@@ -99,6 +101,11 @@ help: https://www.youtube.com/watch?v=HIb4Ucs_foQ&ab_channel=SonnySangha
 (pour déployer un projet PHP voir l'exemple Symfony de agency.dotdev.be)
 (pour installer composer: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-debian-11)
 `;
+
+const pm2Service = `
+// AS ROOT
+pm2 startup 
+pm2 save`;
 
 const text2 = `apt install snapd
 snap install snapd
@@ -185,6 +192,10 @@ If you like Certbot, please consider supporting our work by:
           ✨ Deploy a Nextjs app on Debian 11 VPS
         </Typography>
         <CodeBlock text={text} />
+        <Typography variant="h6" component="div" sx={{mb:2}}>
+          ✨ Make PM2 as a service on Debian, enabling auto restart in case of System reboot 
+        </Typography>
+        <CodeBlock text={pm2Service} />
         <Typography variant="h6" component="div" sx={{mb:2}}>
           ✨ Enable HTTPS, use CerBot : 
         </Typography>

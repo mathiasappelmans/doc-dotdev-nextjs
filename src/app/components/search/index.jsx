@@ -4,6 +4,7 @@ import { useMedia } from 'react-use';
 import cn from 'classnames';
 import { IconSearch } from '@/app/components/Icon/IconSearch';
 import data from '@/data/searchData'
+import { _data } from '@/app/components/Menu'
 
 /* You can open Kbar using Toggle button.
 
@@ -28,13 +29,14 @@ const ComponentWithUseKBar = props => {
 }
 
 const Search = () => {
-
+	console.log(_data)
+	console.log(data)
 	const { mode } = useColorScheme();
 	const systemModeDark = useMedia('(prefers-color-scheme: dark)', false)
 	const light = (mode === 'light' || !systemModeDark)	
 
 	return (
-		<KBarProvider actions={data}>
+		<KBarProvider actions={_data}>
 			<ComponentWithUseKBar	triggerClick className='flex-1 cursor-pointer'>
 				<div className="items-center justify-center px-4 w-full md:flex 3xl:w-auto 3xl:shrink-0 3xl:justify-center">
 					<button
@@ -85,8 +87,10 @@ const SearchResults = () => {
 				) : (
 					// action
 					<div className={`text-black flex px-8 ${active ? "bg-[#eeeeee]" : "bg-tranparent"}`}>
-						<i className={`text-black flex px-8 ${item.icon}`} />
-						{item.name}
+						<a href={`${item.url}`}>
+							<i className={`text-black flex px-8 ${item.icon}`} />
+							{item.name}
+						</a>
 					</div>
 				)
 			} 
