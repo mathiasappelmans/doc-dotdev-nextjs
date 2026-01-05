@@ -140,8 +140,8 @@ export const data = {
       route: '/nextjs/next-image'
     },
     {
-      text: 'Code Block',
-      route: '/nextjs/codeblock'
+      text: 'Shadcn',
+      route: '/nextjs/shadcn'
     },
     {
       text: 'Icons',
@@ -180,7 +180,7 @@ export const data = {
       route: '/nextjs/deploy-react'
     },
     {
-      text: 'SyntaxHighlighter CodeBlock',
+      text: 'CodeBlock',
       route: '/nextjs/syntax'
     },
     {
