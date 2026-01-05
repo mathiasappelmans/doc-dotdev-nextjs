@@ -44,7 +44,11 @@ export const data = {
   nextjsListTitle : { text: "React Next.js", route: '/nextjs' },
   nextjsList : [
     {
-      text: 'React + Tailwind 4 install from scratch',
+      text: 'package-lock.json explained',
+      route: '/nextjs/package-lock'
+    },
+    {
+      text: 'React + TW4 install',
       route: '/nextjs/scratchreact'
     },
     {
@@ -74,6 +78,10 @@ export const data = {
     {
       text: 'useContext',
       route: '/nextjs/usecontext'
+    },
+    {
+      text: 'useRouter',
+      route: '/nextjs/userouter'
     },
     {
       text: 'useReducer',

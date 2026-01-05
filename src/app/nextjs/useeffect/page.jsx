@@ -13,9 +13,12 @@ the javascript code of the component is executed, but doesn't change the view.
 Some examples of side effects are: 
 fetching data, directly updating the DOM, and timers.
 
-Let's put this code in a useEffect :  
-UseEffect execute it's code on any change of it's Dependency.
-UseEffect also execute on first initial render. 
+UseEffect's code is executed AFTER the first initial render.  
+UseEffect's code is also executed AFTER any change of it's Dependency.
+
+So, if we need to add an event listener to an element the DOM, we have to do it in a useEffect.
+We can also clean up the event listener in the return function of the useEffect to avoid memory leaks.
+
 If dependency array is empty, useEffect triggers only on mount of the component.
 
 Example : updating directly the DOM by changing the Document title :
