@@ -1,5 +1,5 @@
 'use client';
-import { CopyBlock, solarizedDark } from 'react-code-blocks';
+import { CodeBlock as CB, solarizedDark } from 'react-code-blocks';
 
 const CodeBlock = (props: { text: string; color?: string; lang?: string; className?: string; }) => {
 
@@ -8,7 +8,7 @@ const CodeBlock = (props: { text: string; color?: string; lang?: string; classNa
 	
 	return (
 		<div className={`my-4 py-2 ${twClass}`}>
-			<CopyBlock
+			<CB
 				text={props.text}
 				language={language}
 				showLineNumbers={false}
