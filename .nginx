@@ -1,7 +1,7 @@
 # PHP Pass
 location / {
 
-	proxy_pass http://localhost:3004;
+	proxy_pass http://localhost:3010;
 
 	
 	}

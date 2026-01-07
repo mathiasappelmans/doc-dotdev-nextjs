@@ -1,7 +1,6 @@
-import { Link, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Image from "next/image";
 import ImageModal from "@/app/components/ImageModal";
-import CodeBlock from "@/app/components/CodeBlock";
 
 const page = () => {
 
