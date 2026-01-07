@@ -37,16 +37,16 @@ npx shadcn@latest add command`} />
 				About
 			</Typography>
 			<Typography variant='p' component="div" sx={{ margin: '1rem 0' }}>
-				{`I use Shadcn's`} <hl>Command</hl> component (for the Search bar inside the Navbar)
+				{`I use Shadcn's`} <span className='hl'>Command</span> component (for the Search bar inside the Navbar)
 			</Typography>
 			<Link href="https://ui.shadcn.com/docs/components/command" target="_blank">
 				https://ui.shadcn.com/docs/components/command
 			</Link>
 			<Typography variant='p' component="div" sx={{ margin: '1rem 0' }}>
-				The <hl>{`<Command />`}</hl> component uses the <hl>cmdk</hl> component by <hl>pacocoursey</hl>.
+				The <span className='hl'>{`<Command />`}</span> component uses the <span className='hl'>cmdk</span> component by <span className='hl'>pacocoursey</span>.
 			</Typography>
 			<Typography variant='p' component="div" sx={{ margin: '1rem 0' }}>
-				It replace the <hl>KBar</hl> (npm i kbar).
+				It replace the <span className='hl'>KBar</span> (npm i kbar).
 			</Typography>
 			<Typography variant='p' component="div" sx={{ margin: '1rem 0' }}>
 				Why ?
