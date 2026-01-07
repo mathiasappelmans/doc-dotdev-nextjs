@@ -4,7 +4,7 @@ const page = () => {
   const text = 
   `MYSQL (Linux - for Windows see below):
   
-mysql -u root -p
+mysql -u root -p 
   
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 FLUSH PRIVILEGES;

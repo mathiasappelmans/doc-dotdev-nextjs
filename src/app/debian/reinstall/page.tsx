@@ -11,7 +11,7 @@ if a public key is required, it's in c:/users/matha/.ssh/id_rsa.pub
 
 The new root pwd will be sended to t******@gmail.com
 
-Se connecter avec Putty et Filezilla sftp 5*.***.**.**6 root k****m
+Se connecter avec Putty et Filezilla sftp 5*.***.**.**6 root {your root password}
 
 When connected, change root pwd with command 'passwd root'
 
