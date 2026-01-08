@@ -163,8 +163,9 @@ MODIFY \`id\` smallint(5) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 
 For Windows :
 -----------
-- Add mysql.exe in the system PATH (e.g. C:\\wamp64\\bin\\mysql\\mysql9.1.0\\bin) and restart the computer.
-- open a CLI : mysql.exe -u mathias -p (!! NOT mysqld it does not work)
+- Start WAMP or XAMPP mysql server
+- Add mysql.exe in the system PATH (e.g. C:\\xampp\\mysql\\bin) and restart the computer.
+- Open a CLI : mysql.exe -u mathias -p (!! NOT mysqld it does not work)
  `;
 
 return (
