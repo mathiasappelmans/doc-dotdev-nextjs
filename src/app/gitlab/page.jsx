@@ -10,6 +10,22 @@ const page = () => {
 					GitLab CI/CD DevOps
 				</Typography>
 			</div>
+			<Typography variant="body1" mb={1}>
+				<span className="text-link font-semibold">GIT </span> flow and CLI commands :
+			</Typography>
+			<Typography sx={{ mb: 1 }}>
+				<Link href="https://mtapp.dotdev.be/PHP_dans_Debian" target="_blank">
+					https://mtapp.dotdev.be/PHP_dans_Debian
+				</Link>
+			</Typography>
+			<Typography sx={{ mb: 8 }}>
+				<Link href="https://mtapp.dotdev.be/BIREC_BINEG_APPS#git" target="_blank">
+					https://mtapp.dotdev.be/BIREC_BINEG_APPS#git
+				</Link>
+			</Typography>
+			<Typography variant="h6" mb={1}>
+				CI/CD - Pipelines
+			</Typography>
 			<Typography variant="body1" mb={4}>
 				<span className="text-link font-semibold">CI/CD </span>
 				{`automates the software development process, from coding through deployment. Falls under DevOps (the joining of development and operations teams) and combines the practices of continuous integration and continuous delivery. 
