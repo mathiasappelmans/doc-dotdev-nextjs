@@ -1,4 +1,5 @@
 import { Link, Typography } from "@mui/material";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 const page = () => {
