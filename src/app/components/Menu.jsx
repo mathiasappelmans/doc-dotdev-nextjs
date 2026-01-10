@@ -387,6 +387,10 @@ export const data = {
   ],
   mainList : [
     {
+      text: 'Docker',
+      route: '/docker'
+    },
+    {
       text: 'GitLab CI/CD',
       route: '/gitlab'
     },
