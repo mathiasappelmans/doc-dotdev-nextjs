@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className='text-sm'>
       <div className="flex items-center mt-5">
-        <Image src="/docker.svg" width={70} height={0} className="-mt-8 mx-4" alt="Docker logo" />
+        <Image src="/Docker.svg" width={70} height={0} className="-mt-8 mx-4" alt="Docker logo" />
         <Typography variant="h5" sx={{ fontWeight: '600' }} mb={4}>
           Docker
         </Typography>
