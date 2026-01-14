@@ -391,8 +391,16 @@ export const data = {
       route: '/docker'
     },
     {
+      text: 'Git',
+      route: '/git'
+    },
+    {
       text: 'GitLab CI/CD',
       route: '/gitlab'
+    },
+    {
+      text: 'async defer script',
+      route: '/async-defer'
     },
     {
       text: 'Versioning',
